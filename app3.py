@@ -62,9 +62,9 @@ def main():
     """
     st.markdown(html_level, unsafe_allow_html=True)
 
-    OIL_LEVEL = st.text_input("OIL LEVEL"," ")
-    OIL_TEMP = st.text_input("OIL TEMP"," ")
-    WINDING_TEMP = st.text_input("WINDING TEMP"," ")
+    OIL_LEVEL = st.text_input("OIL LEVEL","%")
+    OIL_TEMP = st.text_input("OIL TEMP","deg C")
+    WINDING_TEMP = st.text_input("WINDING TEMP","deg C")
 
     safe_html="""  
       <div style="background-color:#F4D03F;padding:10px >
