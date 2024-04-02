@@ -5,7 +5,7 @@ model=pickle.load(open('monitor1.pkl','rb'))
 
 oil_level_threshold = 70
 oil_temp_threshold = 35
-winding_temp_threshold = 45
+winding_temp_threshold = 40
 oil_level_feature_index = 0
 oil_temp_feature_index = 1
 winding_temp_feature_index = 2
@@ -90,7 +90,7 @@ def main():
         return "Safe"
     def find_fault_windingtemp(WINDING_TEMP_str):
        WINDING_TEMP= float(WINDING_TEMP_str)
-       if WINDING_TEMP > 45 :
+       if WINDING_TEMP > 40 :
         return "Faulty"
        else:
         return "Safe"
